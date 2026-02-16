@@ -5,13 +5,69 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Железные двери — металлические входные двери от производителя в Москве</title>
 	<meta name="description" content="Надёжные стальные двери с терморазрывом, зеркалом, умными замками. Производство под заказ. Замер бесплатно, доставка и монтаж в день обращения. Гарантия до 10 лет."/>
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+	<!-- jQuery (обязательно, Owl зависит от него) -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+	<!-- Owl Carousel JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- Фиксированная панель справа по центру -->
+<div class="fixed-social-panel">
+	<!-- Избранное -->
+	<a href="/izbrannoe/" class="panel-item wishlist" title="Избранное" aria-label="Избранное">
+		<svg class="icon heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+			<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+		</svg>
+		<span class="badge">0</span>
+	</a>
 
+	<!-- Telegram -->
+	<a href="https://t.me/ваш_канал_или_бот" target="_blank" rel="noopener" class="panel-item telegram" title="Telegram" aria-label="Telegram">
+		<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+			<path d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 2.004-.931L23.93 3.766c.347-1.396-.543-2.032-1.581-1.632l-21.4 8.22c-1.471.586-1.452 1.415.078 1.843l5.4 1.68 12.554-7.883c.593-.354 1.132-.164.696.43z"/>
+		</svg>
+	</a>
+
+	<!-- Messenger (Meta/FB) -->
+	<a href="https://m.me/ваш_пейдж_id" target="_blank" rel="noopener" class="panel-item messenger" title="Messenger" aria-label="Messenger">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1000 1000">
+<defs>
+<linearGradient id="b">
+<stop offset="0" stop-color="#00f"/>
+<stop offset="1" stop-opacity="0"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="a">
+<stop offset="0" stop-color="#4cf"/>
+<stop offset=".662" stop-color="#53e"/>
+<stop offset="1" stop-color="#93d"/>
+</linearGradient>
+<linearGradient id="c" x1="117.847" x2="1000" y1="760.536" y2="500" gradientUnits="userSpaceOnUse" href="#a"/>
+<radialGradient id="d" cx="-87.392" cy="1166.116" r="500" fx="-87.392" fy="1166.116" gradientTransform="rotate(51.356 1551.478 559.3)scale(2.42703433 1)" gradientUnits="userSpaceOnUse" href="#b"/>
+</defs>
+<rect width="1000" height="1000" fill="url(#c)" ry="249.681"/>
+<rect width="1000" height="1000" fill="url(#d)" ry="249.681"/>
+<path fill="#fff" fill-rule="evenodd" d="M508.211 878.328c-75.007 0-109.864-10.95-170.453-54.75-38.325 49.275-159.686 87.783-164.979 21.9 0-49.456-10.95-91.248-23.36-136.873-14.782-56.21-31.572-118.807-31.572-209.508 0-216.626 177.754-379.597 388.357-379.597 210.785 0 375.947 171.001 375.947 381.604.707 207.346-166.595 376.118-373.94 377.224m3.103-571.585c-102.564-5.292-182.499 65.7-200.201 177.024-14.6 92.162 11.315 204.398 33.397 210.238 10.585 2.555 37.23-18.98 53.837-35.587a189.8 189.8 0 0 0 92.71 33.032c106.273 5.112 197.08-75.794 204.215-181.95 4.154-106.382-77.67-196.486-183.958-202.574Z" clip-rule="evenodd"/>
+</svg>
+	</a>
+
+	<!-- Написать (конверт / форма) -->
+	<a href="javascript:;" class="panel-item mail" data-fancybox data-src="#callback-form" title="Написать нам" aria-label="Написать нам">
+		<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+			<rect x="2" y="4" width="20" height="16" rx="2"/>
+			<path d="M2 8l9.5 6.5L22 8"/>
+		</svg>
+	</a>
+</div>
 <header class="header">
 	<div class="container header__container">
 		<div class="header__row">
@@ -27,7 +83,7 @@
 			<!-- Правая колонка -->
 			<div class="header-right">
 				<div class="header-info info-time hide-640">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.2">
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff9300" stroke-width="2.2">
 						<circle cx="12" cy="13" r="8"/>
 						<path d="M12 9v4l3 3"/>
 					</svg>
@@ -35,7 +91,7 @@
 				</div>
 
 				<div class="header-info info-address hide-768">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2.2">
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff9300" stroke-width="2.2">
 						<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
 						<circle cx="12" cy="10" r="3"/>
 					</svg>
@@ -52,9 +108,31 @@
 							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
 						</svg>
 					</a>
+						<a href="https://wa.me/79853943365" class="messenger whatsapp" aria-label="Написать в WhatsApp" target="_blank" rel="noopener">
+						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1000 1000">
+						<defs>
+						<linearGradient id="b">
+						<stop offset="0" stop-color="#00f"></stop>
+						<stop offset="1" stop-opacity="0"></stop>
+						<stop offset="1" stop-opacity="0"></stop>
+						</linearGradient>
+						<linearGradient id="a">
+						<stop offset="0" stop-color="#4cf"></stop>
+						<stop offset=".662" stop-color="#53e"></stop>
+						<stop offset="1" stop-color="#93d"></stop>
+						</linearGradient>
+						<linearGradient id="c" x1="117.847" x2="1000" y1="760.536" y2="500" gradientUnits="userSpaceOnUse" href="#a"></linearGradient>
+						<radialGradient id="d" cx="-87.392" cy="1166.116" r="500" fx="-87.392" fy="1166.116" gradientTransform="rotate(51.356 1551.478 559.3)scale(2.42703433 1)" gradientUnits="userSpaceOnUse" href="#b"></radialGradient>
+						</defs>
+						<rect width="1000" height="1000" fill="url(#c)" ry="249.681"></rect>
+						<rect width="1000" height="1000" fill="url(#d)" ry="249.681"></rect>
+						<path fill="#fff" fill-rule="evenodd" d="M508.211 878.328c-75.007 0-109.864-10.95-170.453-54.75-38.325 49.275-159.686 87.783-164.979 21.9 0-49.456-10.95-91.248-23.36-136.873-14.782-56.21-31.572-118.807-31.572-209.508 0-216.626 177.754-379.597 388.357-379.597 210.785 0 375.947 171.001 375.947 381.604.707 207.346-166.595 376.118-373.94 377.224m3.103-571.585c-102.564-5.292-182.499 65.7-200.201 177.024-14.6 92.162 11.315 204.398 33.397 210.238 10.585 2.555 37.23-18.98 53.837-35.587a189.8 189.8 0 0 0 92.71 33.032c106.273 5.112 197.08-75.794 204.215-181.95 4.154-106.382-77.67-196.486-183.958-202.574Z" clip-rule="evenodd"></path>
+						</svg>
+
+</a>
 				</div>
 				<a href="tel:+74958856789" class="phone-number" aria-label="Позвонить">
-					<svg width="22" height="22" viewBox="0 0 24 24" fill="#17ab4b">
+					<svg width="22" height="22" viewBox="0 0 24 24" fill="#ff9300">
 						<path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
 					</svg>
 					+7 (495) 885-67-89
@@ -280,55 +358,6 @@
 	</div>
 </section>
 
-<section class="advantages">
-	<div class="container">
-		<h2 class="section-title">Почему выбирают Железные двери</h2>
-
-		<div class="advantages-grid">
-			<div class="advantage-item">
-				<div class="advantage-icon">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-						<path d="M9 12l2 2 4-4M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-					</svg>
-				</div>
-				<h3 class="advantage-title">Гарантия до 10 лет</h3>
-				<p>Расширенная гарантия на металлоконструкцию — 10 лет уверенности</p>
-			</div>
-
-			<div class="advantage-item">
-				<div class="advantage-icon">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-						<path d="M12 2v20M2 12h20"/>
-					</svg>
-				</div>
-				<h3 class="advantage-title">Бесплатный замер</h3>
-				<p>Выезд мастера в день заявки — замерим дверной проём точно</p>
-			</div>
-
-			<div class="advantage-item">
-				<div class="advantage-icon">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-						<path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
-					</svg>
-				</div>
-				<h3 class="advantage-title">Бесплатная доставка</h3>
-				<p>По Москве и области в пределах 50 км от МКАД — без доплат</p>
-			</div>
-
-			<div class="advantage-item">
-				<div class="advantage-icon">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-						<circle cx="12" cy="12" r="10"/>
-						<polyline points="12 6 12 12 16 14"/>
-					</svg>
-				</div>
-				<h3 class="advantage-title">От 2 дней</h3>
-				<p>Изготовление и установка «под ключ» за 2–5 дней</p>
-			</div>
-		</div>
-	</div>
-</section>
-
 
 
 
@@ -498,6 +527,199 @@
 		</div>
 	</div>
 </section>
+
+
+
+
+
+
+<div class="container-filter">
+
+	<h2 class="section-title">Подбор по параметрам</h2>
+	<div class="section-line"></div>
+
+	<div class="filter-wrapper">
+
+		<div class="range-container" id="priceRange">
+			<div class="range-track">
+				<div class="range-fill" id="fill"></div>
+			</div>
+			<div class="range-thumb" id="thumbMin"></div>
+			<div class="range-thumb" id="thumbMax"></div>
+
+			<div class="current-min" id="currentMinLabel">от 61 200 ₽</div>
+			<div class="current-max" id="currentMaxLabel">до 153 000 ₽</div>
+		</div>
+
+		<div class="range-labels">
+			<span>от 6 120 ₽</span>
+			<span>до 153 000 ₽</span>
+		</div>
+
+		<div class="controls">
+			<div class="select-group">
+				<label>Контуры уплотнения</label>
+				<select>
+					<option>1 контур</option>
+					<option>2 контура</option>
+					<option>3 контура</option>
+					<option>Магнитный + резиновый</option>
+				</select>
+			</div>
+			<div class="select-group">
+				<label>Отделка снаружи</label>
+				<select>
+					<option>Любой вариант</option>
+					<option>Порошковое напыление</option>
+					<option>МДФ</option>
+					<option>Массив дерева</option>
+					<option>Зеркало</option>
+				</select>
+			</div>
+			<div class="select-group">
+				<label>Отделка внутри</label>
+				<select>
+					<option>Любой вариант</option>
+					<option>МДФ</option>
+					<option>Ламинат</option>
+					<option>Экошпон</option>
+					<option>Панель массив</option>
+				</select>
+			</div>
+			<div class="select-group">
+				<label>Запирающая система</label>
+				<select>
+					<option>Любой вариант</option>
+					<option>2 замка</option>
+					<option>3 замка</option>
+					<option>Сувальдный + цилиндровый</option>
+					<option>Умный замок</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="submit-row">
+			<button class="btn-submit">ПОДОБРАТЬ ДВЕРИ</button>
+			<div class="found">Найдено подходящих моделей: <strong>116 шт.</strong></div>
+		</div>
+	</div>
+
+</div>
+
+<script>
+	// ----------------------------------------------------
+	//   Простой двухползунковый range (без <input type="range">)
+	// ----------------------------------------------------
+
+	const minValue = 6120;
+	const maxValue = 153000;
+
+	let minPos = 20000;
+	let maxPos = 138000;
+
+	const fill = document.getElementById('fill');
+	const thumbMin = document.getElementById('thumbMin');
+	const thumbMax = document.getElementById('thumbMax');
+	const currentMinLabel = document.getElementById('currentMinLabel');
+	const currentMaxLabel = document.getElementById('currentMaxLabel');
+
+	function updateRange() {
+		const rangeWidth = 100; // %
+		const minPercent = ((minPos - minValue) / (maxValue - minValue)) * rangeWidth;
+		const maxPercent = ((maxPos - minValue) / (maxValue - minValue)) * rangeWidth;
+
+		fill.style.left  = minPercent + '%';
+		fill.style.width = (maxPercent - minPercent) + '%';
+
+		thumbMin.style.left = minPercent + '%';
+		thumbMax.style.left = maxPercent + '%';
+
+		currentMinLabel.textContent = `от ${Math.round(minPos).toLocaleString('ru-RU')} ₽`;
+		currentMaxLabel.textContent = `до ${Math.round(maxPos).toLocaleString('ru-RU')} ₽`;
+
+		currentMinLabel.style.left = minPercent + '%';
+		currentMaxLabel.style.right = (100 - maxPercent) + '%';
+	}
+
+	function makeDraggable(thumb, isMin) {
+		let isDragging = false;
+
+		thumb.addEventListener('mousedown', (e) => {
+			isDragging = true;
+			e.preventDefault();
+		});
+
+		document.addEventListener('mousemove', (e) => {
+			if (!isDragging) return;
+
+			const rect = document.getElementById('priceRange').getBoundingClientRect();
+			let pos = ((e.clientX - rect.left) / rect.width) * 100;
+			pos = Math.max(0, Math.min(100, pos));
+
+			const value = minValue + (pos / 100) * (maxValue - minValue);
+
+			if (isMin) {
+				if (value < maxPos - 5000) { // минимальный зазор
+					minPos = value;
+				}
+			} else {
+				if (value > minPos + 5000) {
+					maxPos = value;
+				}
+			}
+
+			updateRange();
+		});
+
+		document.addEventListener('mouseup', () => {
+			isDragging = false;
+		});
+
+		// touch support
+		thumb.addEventListener('touchstart', (e) => {
+			isDragging = true;
+		}, { passive: false });
+
+		document.addEventListener('touchmove', (e) => {
+			if (!isDragging) return;
+			const touch = e.touches[0];
+			const rect = document.getElementById('priceRange').getBoundingClientRect();
+			let pos = ((touch.clientX - rect.left) / rect.width) * 100;
+			pos = Math.max(0, Math.min(100, pos));
+
+			const value = minValue + (pos / 100) * (maxValue - minValue);
+
+			if (isMin) {
+				if (value < maxPos - 5000) minPos = value;
+			} else {
+				if (value > minPos + 5000) maxPos = value;
+			}
+
+			updateRange();
+			e.preventDefault();
+		}, { passive: false });
+
+		document.addEventListener('touchend', () => {
+			isDragging = false;
+		});
+	}
+
+	makeDraggable(thumbMin, true);
+	makeDraggable(thumbMax, false);
+
+	// начальное положение
+	updateRange();
+</script>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1343,6 +1565,429 @@
 
 
 
+<section class="delivery-install-section">
+	<div class="container">
+		<div class="section-header">
+			<span class="subtitle">Стоимость услуг</span>
+			<h2>Доставка и установка</h2>
+		</div>
+
+		<div class="content-grid">
+			<!-- Левая колонка: таблица + оплата -->
+			<div class="left-column">
+				<!-- Таблица услуг -->
+				<div class="price-table-wrapper">
+					<table class="price-table">
+						<tbody>
+							<tr>
+								<td>Установка металлических входных дверей</td>
+								<td><strong>5000 ₽</strong></td>
+							</tr>
+							<tr>
+								<td>Демонтаж деревянной старой двери</td>
+								<td><strong>500 ₽</strong></td>
+							</tr>
+							<tr>
+								<td>Демонтаж старой железной двери</td>
+								<td><strong>от 1000 ₽</strong></td>
+							</tr>
+							<tr>
+								<td>Заделка швов монтажной пеной</td>
+								<td><strong>от 200 ₽</strong></td>
+							</tr>
+							<tr>
+								<td>Доставка по Москве и области (до 5 км от МКАД)</td>
+								<td><strong class="free">Бесплатно</strong></td>
+							</tr>
+							<tr>
+								<td>Подъём на этаж (без грузового лифта)</td>
+								<td><strong>от 100 ₽</strong></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Условия оплаты -->
+<div class="payment-block">
+	<h3>Условия и способы оплаты</h3>
+
+	<div class="payment-methods">
+		<!-- 1. Наличный расчёт (иконка купюр) -->
+		<div class="method">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M52.0796 27.9455C51.2336 27.2874 50.0367 27.3343 49.2447 28.0564L43.0579 33.6973C42.9563 35.2622 41.6548 36.5 40.0642 36.5H33.5642V34.5H40.0642C40.6165 34.5 41.0642 34.0523 41.0642 33.5V33C41.0642 32.447 40.6169 32 40.0653 32H30.7534C30.5629 32 30.375 31.9812 30.1976 31.9489C23.167 30.6711 18.7093 33.4829 16.9215 35.4116L25.3015 43.3926C25.379 43.2045 25.4726 43.0235 25.5827 42.8502C26.0742 42.0769 26.8236 41.5677 27.6466 41.2305C29.2531 40.5723 31.4223 40.4576 33.523 40.4992C34.8848 40.5262 36.3253 40.6248 37.6508 40.7154C38.3745 40.7649 39.0638 40.8121 39.6872 40.844C40.5966 40.8905 41.3743 40.9061 41.9875 40.8648C42.6503 40.8202 42.9356 40.7172 43.0095 40.6679C43.2399 40.5144 43.7349 40.0937 44.4481 39.4228C45.1406 38.7714 45.9897 37.9314 46.9078 36.9853C48.7457 35.0911 50.8375 32.7948 52.4809 30.7663C53.1622 29.9254 53.0083 28.6678 52.0796 27.9455ZM24.5964 45.483L15.5484 36.8659L12.3273 39.7941C11.8977 40.1847 11.8899 40.8578 12.3103 41.2582L19.9063 48.4924C20.286 48.854 20.8806 48.8609 21.2686 48.5082L24.5964 45.483ZM14.8107 34.8336L10.982 38.3142C9.69315 39.4859 9.66972 41.5052 10.931 42.7065L18.527 49.9407C19.6661 51.0256 21.4499 51.0463 22.6139 49.9881L27.1292 45.8833L27.0542 45.3586C26.9556 44.6686 27.0771 44.2277 27.2707 43.923C27.4727 43.6051 27.8291 43.3171 28.4049 43.0812C29.5958 42.5933 31.3961 42.4575 33.4834 42.4988C34.8065 42.5251 36.1418 42.6169 37.4286 42.7053C38.1673 42.7561 38.8899 42.8058 39.5851 42.8414C40.5115 42.8887 41.3859 42.9098 42.1218 42.8603C42.808 42.8141 43.5689 42.6988 44.1189 42.332C44.5089 42.0721 45.1189 41.5376 45.8184 40.8797C46.5385 40.2023 47.4099 39.3399 48.3432 38.378C50.208 36.4561 52.3428 34.114 54.0349 32.0253C55.4799 30.2417 55.045 27.7181 53.3075 26.3668C51.6929 25.111 49.4086 25.2004 47.8971 26.5785L42.605 31.4037C42.0744 30.5605 41.1358 30 40.0653 30H30.7534C30.6928 30 30.6249 29.9938 30.5553 29.9812C21.9807 28.4228 16.5884 32.3639 14.8107 34.8336Z" fill="#ff9300"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.5359 22.7927C36.3363 23.1621 37.5124 23.4172 38.8651 23.4172C40.2179 23.4172 41.394 23.1621 42.1944 22.7927C43.0798 22.3841 43.166 22.0211 43.166 21.9707H45.166C45.166 23.2714 44.0657 24.1318 43.0325 24.6086C41.9144 25.1247 40.44 25.4172 38.8651 25.4172C37.2903 25.4172 35.8159 25.1247 34.6978 24.6086C33.6646 24.1318 32.5642 23.2714 32.5642 21.9707H34.5642C34.5642 22.0211 34.6505 22.3841 35.5359 22.7927Z" fill="#ff9300"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.5359 19.5306C36.3363 19.9 37.5124 20.1551 38.8651 20.1551C40.2179 20.1551 41.394 19.9 42.1944 19.5306C43.0798 19.122 43.166 18.759 43.166 18.7086H45.166C45.166 20.0093 44.0657 20.8697 43.0325 21.3465C41.9144 21.8626 40.44 22.1551 38.8651 22.1551C37.2903 22.1551 35.8159 21.8626 34.6978 21.3465C33.6646 20.8697 32.5642 20.0093 32.5642 18.7086H34.5642C34.5642 18.759 34.6505 19.122 35.5359 19.5306Z" fill="#ff9300"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.5359 14.6245C34.6505 15.0332 34.5642 15.3961 34.5642 15.4466C34.5642 15.497 34.6505 15.86 35.5359 16.2686C36.3363 16.638 37.5124 16.8931 38.8651 16.8931C40.2179 16.8931 41.394 16.638 42.1944 16.2686C43.0798 15.86 43.1661 15.497 43.1661 15.4466C43.1661 15.3961 43.0798 15.0332 42.1944 14.6245C41.394 14.2551 40.2179 14 38.8651 14C37.5124 14 36.3363 14.2551 35.5359 14.6245ZM34.6978 12.8086C35.8159 12.2926 37.2903 12 38.8651 12C40.44 12 41.9144 12.2926 43.0325 12.8086C44.0657 13.2855 45.1661 14.1458 45.1661 15.4466C45.1661 16.7473 44.0657 17.6077 43.0325 18.0845C41.9144 18.6006 40.44 18.8931 38.8651 18.8931C37.2903 18.8931 35.8159 18.6006 34.6978 18.0845C33.6646 17.6077 32.5642 16.7473 32.5642 15.4466C32.5642 14.1458 33.6646 13.2855 34.6978 12.8086Z" fill="#ff9300"/>
+</svg>
+			<span>Наличный расчёт</span>
+		</div>
+
+		<!-- 2. Банковской картой (иконка карты) -->
+		<div class="method">
+<svg width="64" height="64" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M419 151H92C82.6112 151 75 158.611 75 168V345C75 354.389 82.6112 362 92 362H419C428.389 362 436 354.389 436 345V168C436 158.611 428.389 151 419 151ZM92 143C78.1929 143 67 154.193 67 168V345C67 358.807 78.1929 370 92 370H419C432.807 370 444 358.807 444 345V168C444 154.193 432.807 143 419 143H92Z" fill="#ff9300"/>
+<path d="M367 296.5C367 318.868 348.868 337 326.5 337C304.132 337 286 318.868 286 296.5C286 274.132 304.132 256 326.5 256C348.868 256 367 274.132 367 296.5Z" fill="#ff9300"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M326.5 332C346.106 332 362 316.106 362 296.5C362 276.894 346.106 261 326.5 261C306.894 261 291 276.894 291 296.5C291 316.106 306.894 332 326.5 332ZM326.5 337C348.868 337 367 318.868 367 296.5C367 274.132 348.868 256 326.5 256C304.132 256 286 274.132 286 296.5C286 318.868 304.132 337 326.5 337Z" fill="#ff9300"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M366.5 332C386.106 332 402 316.106 402 296.5C402 276.894 386.106 261 366.5 261C346.894 261 331 276.894 331 296.5C331 316.106 346.894 332 366.5 332ZM366.5 337C388.868 337 407 318.868 407 296.5C407 274.132 388.868 256 366.5 256C344.132 256 326 274.132 326 296.5C326 318.868 344.132 337 366.5 337Z" fill="#ff9300"/>
+<path d="M72 175H439V217H72V175Z" fill="#ff9300"/>
+</svg>
+
+			<span>Банковской картой</span>
+		</div>
+
+		<!-- 3. Безналичный расчёт (иконка банка / перевод) -->
+		<div class="method">
+<svg width="64" height="64" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M418.854 220.854H91.8535C82.4647 220.854 74.8535 228.465 74.8535 237.854V414.854C74.8535 424.242 82.4647 431.854 91.8535 431.854H418.854C428.242 431.854 435.854 424.242 435.854 414.854V237.854C435.854 228.465 428.242 220.854 418.854 220.854ZM91.8535 212.854C78.0464 212.854 66.8535 224.046 66.8535 237.854V414.854C66.8535 428.661 78.0464 439.854 91.8535 439.854H418.854C432.661 439.854 443.854 428.661 443.854 414.854V237.854C443.854 224.046 432.661 212.854 418.854 212.854H91.8535Z" fill="#ff9300"/>
+<path d="M71.8535 244.854H438.854V286.854H71.8535V244.854Z" fill="#ff9300"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M443.854 243.121L450.194 246.782C458.325 251.476 461.111 261.873 456.417 270.004L452.917 276.066L443.854 270.834V307.765L463.345 274.004C470.249 262.047 466.152 246.757 454.194 239.854L443.479 233.667C443.725 235.075 443.854 236.522 443.854 238V243.121ZM391.683 213H407.683L171.004 76.3535C159.047 69.45 143.757 73.5469 136.854 85.5042L48.3535 238.791C41.45 250.748 45.5469 266.038 57.5042 272.941L66.8535 278.339V269.102L61.5042 266.013C53.3732 261.319 50.5873 250.922 55.2817 242.791L119.282 131.939L259.683 213H343.683L140.282 95.5664L143.782 89.5042C148.476 81.3732 158.873 78.5873 167.004 83.2817L391.683 213Z" fill="#ff9300"/>
+</svg>
+			<span>Безналичный расчёт</span>
+		</div>
+	</div>
+
+	<div class="payment-info">
+		<p>Предоплата 30% после замера и заключения договора.<br>
+			 Остаток 70% — после установки.</p>
+		<p class="note">При безналичном расчёте — предоплата 100%</p>
+	</div>
+</div>
+			</div>
+
+			<!-- Правая колонка: карта + зона доставки -->
+			<div class="right-column">
+				<div class="map-container">
+					<iframe 
+						src="https://yandex.com/map-widget/v1/?um=constructor%3A9f8c8ab30fcd336782b8ccdbbbe3b83cdacae5fdaca04483dee15d10f83018b1&amp;source=constructor" 
+						width="100%" 
+						height="460" 
+						frameborder="0" 
+						allowfullscreen="true">
+					</iframe>
+				</div>
+
+				<!-- Зона доставки грузовиком -->
+				<div class="delivery-zone">
+					<div class="truck-icon">
+						🚚
+					</div>
+					<div class="zone-text">
+						<strong>Транспортировка дверей</strong><br>
+						осуществляется в зелёной зоне
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="certificates-section">
+	<div class="container">
+		<div class="section-header">
+			<span class="subtitle">Сертификаты на продукцию</span>
+			<h2>Сертификаты и лицензии</h2>
+		</div>
+
+		<div class="cert-grid">
+			<div class="cert-item">
+				<div class="cert-image-wrapper">
+					<img 
+						src="img/sert1m.jpg" 
+						alt="Сертификат соответствия на металлические двери" 
+						loading="lazy">
+				</div>
+			</div>
+
+			<div class="cert-item">
+				<div class="cert-image-wrapper">
+					<img 
+						src="img/sert2m.jpg" 
+						alt="Сертификат соответствия на противопожарные двери" 
+						loading="lazy">
+				</div>
+			</div>
+
+			<div class="cert-item">
+				<div class="cert-image-wrapper">
+					<img 
+						src="img/sert3m.jpg" 
+						alt="Сертификат соответствия на металлические двери со стеклом" 
+						loading="lazy">
+				</div>
+			</div>
+
+			<div class="cert-item">
+				<div class="cert-image-wrapper">
+					<img 
+						src="img/sert2m.jpg" 
+						alt="Сертификат соответствия на противопожарные двери 2-го типа" 
+						loading="lazy">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="faq-section">
+	<div class="container">
+		<div class="section-header">
+			<span class="subtitle">Часто задаваемые вопросы</span>
+			<h2>Ответы на популярные вопросы</h2>
+		</div>
+
+		<div class="faq-accordion" itemscope itemtype="https://schema.org/FAQPage">
+			<!-- 1 -->
+			<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<button class="faq-title js-toggle" aria-expanded="false" aria-controls="faq1">
+					<span itemprop="name">Есть ли гарантия на металлические входные двери?</span>
+					<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="6 9 12 15 18 9"></polyline>
+					</svg>
+				</button>
+				<div class="faq-content" id="faq1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+					<div class="text" itemprop="text">
+						Да, на все двери из нашего каталога действует официальная гарантия производителя — от 3 до 10 лет в зависимости от модели и бренда. Мы обеспечиваем гарантийное и постгарантийное обслуживание по всей России.
+					</div>
+				</div>
+			</div>
+
+			<!-- 2 -->
+			<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<button class="faq-title js-toggle" aria-expanded="false" aria-controls="faq2">
+					<span itemprop="name">Как выбрать надёжную входную дверь в квартиру?</span>
+					<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="6 9 12 15 18 9"></polyline>
+					</svg>
+				</button>
+				<div class="faq-content" id="faq2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+					<div class="text" itemprop="text">
+						Обратите внимание на ключевые параметры:<br>
+						• Толщина металла полотна — минимум 1,5–2 мм<br>
+						• Количество контуров уплотнения — 2–3 для отличной шумо- и теплоизоляции<br>
+						• Класс взломостойкости — 2–4<br>
+						• Тип замков — минимум 2 (сувальдный + цилиндровый)<br>
+						• Утеплитель и антивандальное покрытие<br>
+						Мы поможем подобрать идеальный вариант под ваш бюджет и задачи.
+					</div>
+				</div>
+			</div>
+
+			<!-- 3 -->
+			<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<button class="faq-title js-toggle" aria-expanded="false" aria-controls="faq3">
+					<span itemprop="name">Какая дверь лучше для квартиры — с шумоизоляцией или без?</span>
+					<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="6 9 12 15 18 9"></polyline>
+					</svg>
+				</button>
+				<div class="faq-content" id="faq3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+					<div class="text" itemprop="text">
+						Для квартиры в многоквартирном доме однозначно лучше модель с хорошей шумоизоляцией: 2–3 контура уплотнения, минеральная вата или комбинированный наполнитель, качественные замки и антивандальное покрытие. Такие двери значительно снижают шум с лестничной клетки и повышают комфорт.
+					</div>
+				</div>
+			</div>
+
+			<!-- 4 -->
+			<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<button class="faq-title js-toggle" aria-expanded="false" aria-controls="faq4">
+					<span itemprop="name">Какой наполнитель лучше для входной двери?</span>
+					<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="6 9 12 15 18 9"></polyline>
+					</svg>
+				</button>
+				<div class="faq-content" id="faq4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+					<div class="text" itemprop="text">
+						Самые эффективные варианты:<br>
+						• Минеральная вата — лидер по тепло- и шумоизоляции<br>
+						• Пенополиуретан — отличная защита от холода<br>
+						• Комбинированный наполнитель — максимальная защита от всех факторов<br>
+						• Пенополистирол — бюджетный, но менее эффективен по звуку<br>
+						Подберём оптимальный вариант именно для вашего дома.
+					</div>
+				</div>
+			</div>
+
+			<!-- 5 -->
+			<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<button class="faq-title js-toggle" aria-expanded="false" aria-controls="faq5">
+					<span itemprop="name">Можно ли заказать дверь с установкой «под ключ»?</span>
+					<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="6 9 12 15 18 9"></polyline>
+					</svg>
+				</button>
+				<div class="faq-content" id="faq5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+					<div class="text" itemprop="text">
+						Да, мы выполняем полный монтаж «под ключ» по Москве и области. Сертифицированные мастера: снимают старую дверь, устанавливают новую, герметизируют швы, регулируют полотно, устанавливают фурнитуру. Всё по ГОСТу и с гарантией.
+					</div>
+				</div>
+			</div>
+
+			<!-- 6 -->
+			<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<button class="faq-title js-toggle" aria-expanded="false" aria-controls="faq6">
+					<span itemprop="name">Как заказать дверь нестандартного размера?</span>
+					<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="6 9 12 15 18 9"></polyline>
+					</svg>
+				</button>
+				<div class="faq-content" id="faq6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+					<div class="text" itemprop="text">
+						Оформите заказ по индивидуальным размерам — наши замерщики приедут бесплатно, снимут точные размеры, помогут выбрать конструкцию. Срок изготовления от 25–45 рабочих дней в зависимости от сложности.
+					</div>
+				</div>
+			</div>
+
+			<!-- 7 -->
+			<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+				<button class="faq-title js-toggle" aria-expanded="false" aria-controls="faq7">
+					<span itemprop="name">Стоит ли брать дверь с терморазрывом для частного дома?</span>
+					<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<polyline points="6 9 12 15 18 9"></polyline>
+					</svg>
+				</button>
+				<div class="faq-content" id="faq7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+					<div class="text" itemprop="text">
+						Однозначно да, если дверь выходит на улицу. Терморазрыв полностью исключает промерзание и конденсат, сохраняет тепло в доме даже при -40 °C. Это must-have для загородных домов, коттеджей и дач.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="reviews-section">
+	<div class="container">
+		<div class="section-header">
+			<span class="subtitle">Наши клиенты о нас</span>
+			<h2>Отзывы</h2>
+		</div>
+
+		<div class="reviews-slider owl-carousel" id="reviewsSlider">
+			<!-- Отзыв 1 -->
+			<div class="review-card">
+				<div class="review-content">
+					<div class="stars">
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<h3 class="review-title">Стильная и идеально вписалась</h3>
+					<p class="review-text">
+						Искала необычную дверь для городской квартиры. Выбрала модель с дизайнерской отделкой — смотрится шикарно, полностью в стиль прихожей. Сборка качественная, замки плавные, зазоров нет. Доставка пришла с небольшой задержкой, но в итоге всё идеально. Очень довольна!
+					</p>
+				</div>
+				<div class="review-author">
+					<i class="fas fa-user-circle"></i> Мария
+				</div>
+			</div>
+
+			<!-- Отзыв 2 -->
+			<div class="review-card">
+				<div class="review-content">
+					<div class="stars">
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<h3 class="review-title">Отличная шумоизоляция</h3>
+					<p class="review-text">
+						В подъезде часто шумно, поэтому взяла модель с усиленной шумкой. Теперь в квартире тишина даже вечером. Отделка красивая, идеально подошла к обоям. Установщики сработали быстро и аккуратно — без грязи и пыли. Рекомендую!
+					</p>
+				</div>
+				<div class="review-author">
+					<i class="fas fa-user-circle"></i> Анна
+				</div>
+			</div>
+
+			<!-- Отзыв 3 -->
+			<div class="review-card">
+				<div class="review-content">
+					<div class="stars">
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<h3 class="review-title">Морозостойкая — для дома идеал</h3>
+					<p class="review-text">
+						Год эксплуатации в загородном доме — дверь как новая. Не промерзает, конденсата нет даже в -35 °C. Тепло держит отлично. Установка была сложновата из-за проёма, но ребята справились на ура. Для частного дома — лучшее решение!
+					</p>
+				</div>
+				<div class="review-author">
+					<i class="fas fa-user-circle"></i> Игорь
+				</div>
+			</div>
+
+			<!-- Отзыв 4 -->
+			<div class="review-card">
+				<div class="review-content">
+					<div class="stars">
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<h3 class="review-title">Надёжно и недорого</h3>
+					<p class="review-text">
+						Брал простую модель без лишних наворотов для съёмной квартиры. За свои деньги — просто бомба: крепкая, качественная, без люфтов. Доволен на все 100%. Цена/качество — огонь!
+					</p>
+				</div>
+				<div class="review-author">
+					<i class="fas fa-user-circle"></i> Дмитрий
+				</div>
+			</div>
+
+			<!-- Отзыв 5 -->
+			<div class="review-card">
+				<div class="review-content">
+					<div class="stars">
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<h3 class="review-title">Современно и удобно</h3>
+					<p class="review-text">
+						Взял дверь с умным замком — теперь открываю телефоном, ключи не нужны. Шумо- и теплоизоляция на уровне, выглядит стильно. Настройка заняла время, но оно того стоило. Очень доволен!
+					</p>
+				</div>
+				<div class="review-author">
+					<i class="fas fa-user-circle"></i> Сергей
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
 <section class="premium-info-section">
 	<div class="container narrow">
 		<!-- Введение -->
@@ -1578,98 +2223,146 @@
 
 
 <footer class="premium-footer">
-  <div class="footer-container">
-    <div class="footer-top">
-      <!-- Бренд с SVG дверью -->
-      <div class="footer-brand">
-        
-          <div class="logo-text">
-            <h3><a href="/" class="footer-logo-link">DOORS-IRON.RU</a></h3>
-            <p>Компания «Эфес»</p>
-          </div>
-        
-      </div>
+	<div class="footer-container">
+		<div class="footer-top">
+			<!-- Бренд с SVG дверью -->
+			<div class="footer-brand">
+				
+					<div class="logo-text">
+						<h3><a href="/" class="footer-logo-link">DOORS-IRON.RU</a></h3>
+						<p>Компания «Эфес»</p>
+					</div>
+				
+			</div>
 
-      <div class="footer-nav-grid">
-        <div class="footer-column">
-          <h4>Входные двери</h4>
-          <ul>
-            <li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/vhodnye-dveri-dlya-doma/">Для дома</a></li>
-            <li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/metallicheskie-dveri-v-kvartiru/">В квартиру</a></li>
-            <li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/vkhodnye-dveri-dlya-ofisa/">В офис</a></li>
-            <li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/elitnye-vhodnye-dveri/">Элитные</a></li>
-          </ul>
-        </div>
+			<div class="footer-nav-grid">
+				<div class="footer-column">
+					<h4>Входные двери</h4>
+					<ul>
+						<li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/vhodnye-dveri-dlya-doma/">Для дома</a></li>
+						<li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/metallicheskie-dveri-v-kvartiru/">В квартиру</a></li>
+						<li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/vkhodnye-dveri-dlya-ofisa/">В офис</a></li>
+						<li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/elitnye-vhodnye-dveri/">Элитные</a></li>
+					</ul>
+				</div>
 
-        <div class="footer-column">
-          <h4>По конструкции</h4>
-          <ul>
-            <li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/odnostvorchatye-vhodnye-dveri/">Одностворчатые</a></li>
-            <li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/dveri-dvukhstvorchatye/">Двустворчатые</a></li>
-            <li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/vysokie-vkhodnye-dveri/">Высокие</a></li>
-            <li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/shirokie-vhodnye-dveri/">Широкие</a></li>
-          </ul>
-        </div>
+				<div class="footer-column">
+					<h4>По конструкции</h4>
+					<ul>
+						<li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/odnostvorchatye-vhodnye-dveri/">Одностворчатые</a></li>
+						<li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/dveri-dvukhstvorchatye/">Двустворчатые</a></li>
+						<li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/vysokie-vkhodnye-dveri/">Высокие</a></li>
+						<li><a href="https://doors-iron.ru/katalog/vxodnye-dveri/shirokie-vhodnye-dveri/">Широкие</a></li>
+					</ul>
+				</div>
 
 <div class="footer-column contacts">
-          <h4>Связаться с нами</h4>
-          <ul class="contact-list">
-            <li>
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              <a href="tel:+79035165234">8 (903) 516-52-34</a>
-            </li>
-            <li>
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                <rect x="2" y="4" width="20" height="16" rx="2"/>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-              </svg>
-              <a href="mailto:doorsiron@yandex.ru">doorsiron@yandex.ru</a>
-            </li>
-            <li>
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-              Ежедневно 8:00 – 20:00
-            </li>
-          </ul>
+					<h4>Связаться с нами</h4>
+					<ul class="contact-list">
+						<li>
+							<svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+							</svg>
+							<a href="tel:+79035165234">8 (903) 516-52-34</a>
+						</li>
+						<li>
+							<svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<rect x="2" y="4" width="20" height="16" rx="2"/>
+								<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+							</svg>
+							<a href="mailto:doorsiron@yandex.ru">doorsiron@yandex.ru</a>
+						</li>
+						<li>
+							<svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+								<circle cx="12" cy="12" r="10"/>
+								<polyline points="12 6 12 12 16 14"/>
+							</svg>
+							Ежедневно 8:00 – 20:00
+						</li>
+					</ul>
 
-          <!-- Социалки + WhatsApp & Telegram -->
-          <div class="social-icons">
-            <a href="https://wa.me/79035165234" aria-label="WhatsApp" target="_blank">
+					<!-- Социалки + WhatsApp & Telegram -->
+					<div class="social-icons">
+						<a href="https://wa.me/79035165234" aria-label="WhatsApp" target="_blank">
 <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff">
 							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
 						</svg>
-            </a>
-            <a href="https://t.me/+79035165234" aria-label="Telegram" target="_blank">
+						</a>
+						<a href="https://t.me/+79035165234" aria-label="Telegram" target="_blank">
 <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
 							<path d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.639-17.114c.373-1.747-.678-2.538-1.948-2.032l-17.019 6.491c-1.741.689-1.735 1.65-.323 2.073l4.334 1.383 10.068-6.277c.472-.303.892-.14.545.192z"></path>
 						</svg>
-            </a>
-            <!-- Можно добавить другие соцсети, если есть -->
-          </div>
-        </div>
-      </div>
-    </div>
+						</a>
+						
+	<a href="https://t.me/+79035165234" aria-label="Telegram" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1000 1000">
+						<defs>
+						<linearGradient id="b">
+						<stop offset="0" stop-color="#00f"></stop>
+						<stop offset="1" stop-opacity="0"></stop>
+						<stop offset="1" stop-opacity="0"></stop>
+						</linearGradient>
+						<linearGradient id="a">
+						<stop offset="0" stop-color="#4cf"></stop>
+						<stop offset=".662" stop-color="#53e"></stop>
+						<stop offset="1" stop-color="#93d"></stop>
+						</linearGradient>
+						<linearGradient id="c" x1="117.847" x2="1000" y1="760.536" y2="500" gradientUnits="userSpaceOnUse" href="#a"></linearGradient>
+						<radialGradient id="d" cx="-87.392" cy="1166.116" r="500" fx="-87.392" fy="1166.116" gradientTransform="rotate(51.356 1551.478 559.3)scale(2.42703433 1)" gradientUnits="userSpaceOnUse" href="#b"></radialGradient>
+						</defs>
+						<rect width="1000" height="1000" fill="url(#c)" ry="249.681"></rect>
+						<rect width="1000" height="1000" fill="url(#d)" ry="249.681"></rect>
+						<path fill="#fff" fill-rule="evenodd" d="M508.211 878.328c-75.007 0-109.864-10.95-170.453-54.75-38.325 49.275-159.686 87.783-164.979 21.9 0-49.456-10.95-91.248-23.36-136.873-14.782-56.21-31.572-118.807-31.572-209.508 0-216.626 177.754-379.597 388.357-379.597 210.785 0 375.947 171.001 375.947 381.604.707 207.346-166.595 376.118-373.94 377.224m3.103-571.585c-102.564-5.292-182.499 65.7-200.201 177.024-14.6 92.162 11.315 204.398 33.397 210.238 10.585 2.555 37.23-18.98 53.837-35.587a189.8 189.8 0 0 0 92.71 33.032c106.273 5.112 197.08-75.794 204.215-181.95 4.154-106.382-77.67-196.486-183.958-202.574Z" clip-rule="evenodd"></path>
+						</svg>
 
-    <div class="footer-bottom">
-      <p class="copyright">
-        © 2026 Компания «Эфес». Производство, доставка и монтаж входных металлических дверей.
-        <a href="https://doors-iron.ru/politika-konfidentsialnosti/">Политика конфиденциальности</a>
-      </p>
+</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-      <button class="back-to-top" aria-label="Наверх">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 19V5M5 12l7-7 7 7"/>
-        </svg>
-      </button>
-    </div>
-  </div>
+		<div class="footer-bottom">
+			<p class="copyright">
+				© 2026 Компания «Эфес». Производство, доставка и монтаж входных металлических дверей.
+				<a href="https://doors-iron.ru/politika-konfidentsialnosti/">Политика конфиденциальности</a>
+			</p>
+
+			<button class="back-to-top" aria-label="Наверх">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M12 19V5M5 12l7-7 7 7"/>
+				</svg>
+			</button>
+		</div>
+	</div>
 </footer>
 
 
+
+
+
+<script>
+	$(document).ready(function(){
+		$('#reviewsSlider').owlCarousel({
+			items: 2,                     // ← по 2 отзыва
+			margin: 30,
+			loop: true,
+			nav: true,
+			dots: false,
+			autoplay: true,
+			autoplayTimeout: 7000,
+			autoplayHoverPause: true,
+			navText: [
+				'<i class="fas fa-chevron-left"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg></i>',
+				'<i class="fas fa-chevron-right"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></i>'
+			],
+			responsive: {
+				0:    { items: 1, nav: true  },
+				768:  { items: 2, nav: true  },
+				1024: { items: 2, nav: true  }
+			}
+		});
+	});
+</script>
 
 	<script src="js/main.js"></script>
 </body>

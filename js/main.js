@@ -154,3 +154,21 @@ const btn = document.querySelector('.back-to-top');
     });
   });
 });
+
+
+
+
+
+document.querySelectorAll('.js-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', !expanded);
+    
+    const content = document.getElementById(btn.getAttribute('aria-controls'));
+    content.style.maxHeight = expanded ? '0' : `${content.scrollHeight}px`;
+    content.setAttribute('aria-hidden', expanded);
+  });
+});
+
+
+

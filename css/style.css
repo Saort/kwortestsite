@@ -1,5 +1,5 @@
 :root {
-	--primary:     #ff9300;
+	--primary:     #5686a6;
 	--primary-d:   #ffb700;
 	--dark:        #5686a6;
 	--gray:        #3c5b69;
@@ -45,14 +45,14 @@ body{
 .logo {
 	font-size: clamp(1.9rem, 5.5vw, 2.6rem);
 	font-weight: 800;
-	color: var(--dark);
+	color: var(--primary);
 	text-decoration: none;
 	letter-spacing: -0.8px;
 	line-height: 1;
 }
 
 .logo-accent {
-	color: var(--primary);
+	color: #ff9300;
 }
 
 .logo-slogan {
@@ -133,7 +133,7 @@ body{
 }
 
 .btn-callback {
-	background: var(--primary);
+	background: #fe9300;
 	color: white;
 	font-weight: 600;
 	padding: 10px 20px;
@@ -627,7 +627,7 @@ body{
 }
 
 .hero-title span {
-	color: var(--primary);
+	color: #ffffff;
 	display: block;
 }
 
@@ -1958,7 +1958,7 @@ select {
 
 /* Премиум CTA */
 .premium-cta {
-	background: #ff9300;
+	background: var(--primary);
 	padding: 5rem 1.5rem;
 	position: relative;
 	overflow: hidden;
@@ -2056,7 +2056,7 @@ input:focus {
 	font-size: 1.15rem;
 	font-weight: 700;
 	color: white;
-	background: #ff9300;
+	background: var(--primary);
 	border: none;
 	border-radius: 12px;
 	cursor: pointer;
@@ -2433,8 +2433,8 @@ input:focus {
 .panel-item {
 		width: 54px;
 		height: 54px;
-		background: #111111;
-		border: 1px solid var(--border);
+		background: #ffffff;
+		border: 2px solid #5686a6;
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
@@ -2442,14 +2442,14 @@ input:focus {
 		color: var(--primary);
 		text-decoration: none;
 		transition: all 0.24s ease;
-		box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
 		position: relative;
 }
 
 .panel-item:hover,
 .panel-item:focus {
 		background: var(--primary);
-		color: var(--dark);
+		color: #fff;
 		transform: translateY(-3px) scale(1.08);
 		box-shadow: 0 10px 28px rgba(255, 147, 0, 0.38);
 		outline: none;
@@ -2468,16 +2468,16 @@ input:focus {
 		right: -4px;
 		min-width: 20px;
 		height: 20px;
-		background: var(--primary);
-		color: var(--dark);
+		background: #ffffff;
+		color: #5686a6;
 		font-size: 11px;
 		font-weight: bold;
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 2px solid #000;
-		box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+		border: 2px solid #ffffff;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 		padding: 0 4px;
 }
 
@@ -2880,7 +2880,7 @@ input:focus {
 .text {
 		font-size: 1.02rem;
 		line-height: 1.65;
-		color: #fff;
+		color: #000;
 }
 
 .text p {
@@ -2913,14 +2913,14 @@ input:focus {
 
 
 .reviews-section {
-  background: #F5F9F1;
-  padding: 100px 0 120px;
+  background: #f9fafb;
+  padding: 100px 0;
   color: #f0f0f0;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .subtitle {
@@ -2938,99 +2938,162 @@ input:focus {
   color: #000;
 }
 
-/* Карточка отзыва */
-.review-card {
-  background: #fff;
-  border: 1px solid #cbcbcb;
-  border-radius: 16px;
-  padding: 32px 28px;
-  transition: all 0.3s ease;
-  height: 100%;
+/* Вкладки */
+.reviews-tabs {
   display: flex;
-  flex-direction: column;
-  margin: 0 10px;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.review-card:hover {
-  border-color: var(--primary);
-  box-shadow: 0 16px 40px rgba(255, 147, 0, 0.25);
+.tab {
+  border-radius: 999px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.25s;
+  font-size: 0.95rem;
+}
+
+.tab.active,
+.tab:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.tab-logo {
+  height: 24px;
+}
+
+.tab-rating {
+  font-weight: 600;
+}
+
+/* Общий рейтинг */
+.overall-rating {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.rating-main {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 
 .stars {
   color: var(--primary);
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+}
+
+.reviews-count {
+  color: #888;
+  font-size: 1.05rem;
+  margin-top: 8px;
+}
+
+/* Сетка отзывов (по 2 на десктопе) */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #000;
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 12px 32px rgba(255, 147, 0, 0.2);
+}
+
+.review-header {
+  display: flex;
+  gap: 16px;
   margin-bottom: 16px;
 }
 
-.review-title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #6e6e6e;
-  margin-bottom: 16px;
+.avatar img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info .name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.info .date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin: 6px 0;
 }
 
 .review-text {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: #929292;
-  margin-bottom: auto;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 16px;
 }
 
-.review-author {
-  margin-top: 20px;
-  font-size: 1.05rem;
-  color: var(--primary);
+.source {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 500;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #aaa;
 }
 
-.review-author i {
-  font-size: 1.6rem;
+.source img {
+  height: 20px;
 }
 
-/* Owl Carousel — большие стрелки */
-.owl-carousel .owl-nav {
-  margin-top: 30px;
-}
-
-.owl-carousel .owl-nav button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 60px !important;
-  height: 60px !important;
-  background: var(--primary) !important;
-  color: var(--white) !important;
-  font-size: 1.8rem !important;
-  border-radius: 50% !important;
+/* Кнопка Ещё */
+.more-reviews {
+  display: block;
+  margin: 40px auto 0;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
   transition: all 0.25s;
-  border: 1px solid var(--border);
 }
 
-.owl-carousel .owl-nav .owl-prev {
-  left: -30px;
-}
-
-.owl-carousel .owl-nav .owl-next {
-  right: -30px;
-}
-
-.owl-carousel .owl-nav button:hover {
-  background: var(--primary) !important;
-  color: var(--dark) !important;
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 8px 20px rgba(255, 147, 0, 0.4);
+.more-reviews:hover {
+  background: var(--primary-d);
+  transform: translateY(-3px);
 }
 
 /* Адаптив */
-@media (max-width: 1024px) {
-  .owl-carousel .owl-nav .owl-prev { left: 0; }
-  .owl-carousel .owl-nav .owl-next { right: 0; }
-}
-
-@media (max-width: 768px) {
-  .reviews-section { padding: 70px 0; }
-  .section-header h2 { font-size: 2.2rem; }
+@media (max-width: 992px) {
+  .reviews-grid { grid-template-columns: 1fr; }
 }

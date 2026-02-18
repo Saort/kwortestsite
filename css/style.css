@@ -1559,7 +1559,7 @@ select {
 }
 
 .catalog-card__count-badge strong {
-	color: var(--primary);
+	color: #fe9300;
 	font-size: 1.1rem;
 }
 
